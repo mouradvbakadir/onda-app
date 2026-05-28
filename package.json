@@ -1,0 +1,22 @@
+{
+  "name": "antigravity-onda",
+  "version": "1.0.0",
+  "description": "Antigravity - Plateforme de gestion de maintenance aéroportuaire ONDA",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.7",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "tailwindcss": "^4.3.0",
+    "vite": "^6.3.5"
+  }
+}
