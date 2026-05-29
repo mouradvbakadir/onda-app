@@ -16,6 +16,7 @@ import { renderPreventif } from './pages/preventif.js';
 import { renderPannes } from './pages/pannes.js';
 import { renderReclamations } from './pages/reclamations.js';
 import { renderRapports } from './pages/rapports.js';
+import { renderSlo } from './pages/slo.js';
 
 // Initialize data
 seedDatabase();
@@ -76,6 +77,12 @@ const routes = [
     { 
         path: '#/rapports', 
         component: renderLayout(renderRapports),
+        requiresAuth: true,
+        roles: ['SUPER_ADMIN', 'SUPERVISEUR']
+    },
+    { 
+        path: '#/slo', 
+        component: renderLayout(renderSlo),
         requiresAuth: true,
         roles: ['SUPER_ADMIN', 'SUPERVISEUR']
     }

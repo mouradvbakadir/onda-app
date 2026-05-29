@@ -100,6 +100,7 @@ export const equipementsStore = new Store('equipements');
 export const preventifStore = new Store('preventif');
 export const pannesStore = new Store('pannes');
 export const reclamationsStore = new Store('reclamations');
+export const sloConfigStore = new Store('slo_configs');
 
 class PeriodStore {
     constructor() {
